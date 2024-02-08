@@ -3,7 +3,7 @@
 void main(void)
 {
    int I, J, NUM, SUM, C = 0;
-   printf("\mIngrese el numero limite: ");
+   printf("\nIngrese el numero limite: ");
    scanf("%d", &NUM);
    for (I = 1; I<= NUM; I++)
    {
