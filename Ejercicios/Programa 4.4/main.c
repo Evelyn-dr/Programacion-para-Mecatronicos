@@ -38,6 +38,6 @@ return (K);
 int f4(void)
 {
     int K = 5;
-    K = K + ::K;
+    K = K + K;
     return (K);
 }
