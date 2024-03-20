@@ -12,6 +12,7 @@ struct alumno
 };
 
 void main(void)
+
 {
     struct alumno a1 = {120, "Maria", "Contabilidad", 8.9, "Queretaro"}, a2, a3;
 
@@ -60,6 +61,6 @@ void main(void)
     printf("%.2f\n",a2.promedio);
     puts(a2.direccion);
 
-    printf("\n Datos del alumno 3\n");
+    printf("\nDatos del alumno 3\n");
     printf("%d \t %s \t %s \t %.2f \t %s", a3.matricula, a3.nombre, a3.carrera, a3.promedio, a3.direccion);
 }
