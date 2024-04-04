@@ -24,12 +24,13 @@ void main(void)
     scanf("%d", &TAM);
 }
     while (TAM > 50 || TAM < 1); /* Se verifica que el tamano del arreglo sea correcto. */
-    Lectura(ARRE, TAM);
+    LECTURA (ARRE, TAM);
     F1(ARRE, TAM);
     F2(ARRE, TAM);
     F3(ARRE, TAM);
+    return 0;
     }
-    void Lectura(alumno A[], int T)
+    void LECTURA (alumno A[], int T)
     /* La funcion Lectura se utiliza para leer un arreglo unidimensional de tipo estructura alumno de T elementos. */
     {
         int I, J;

@@ -50,7 +50,7 @@ void main(void)
     struct empleado *e1, *e2, e3, e4;
     /* Se declaran diferentes variables y apuntadores de la estructura empleado para que el lector pueda apreciar tambien las diferentes formas en que los campos reciben valores. */
     /* En el programa principal se leen los campos de una variable, e3, y un apuntador de tipo estructura, *e1. */
-    e1 = new (struct empleado);
+    e1 = &e3;
     printf("\nIngrese el nombre del empleado 1: ");
     scanf("%s", &(*e1).nombre);
     fflush(stdin);
@@ -61,7 +61,7 @@ void main(void)
     printf("--Ingrese la direccion del empleado--");
     printf("\n\tCalle: ");
     fflush(stdin);
-    gets(e1->direccion, calle);
+    gets(e1->direccion.calle);
     printf("\tNumero: ");
     scanf("%d", &e1->direccion.numero);
     printf("\tCodigo Postal: ");
@@ -87,11 +87,11 @@ void main(void)
     printf("\tLocalidad: ");
     fflush(stdin);
     gets(e3.direccion.localidad); /* En la funcion Lectura se leen los campos de una variable, e4, y un apuntador de tipo estructura, *e2. */
-    e2 = new (struct empleado);
+    e2 = &e4;
     Lectura(e2);
     Lectura(&e4);
     printf("\nDatos del empleado 1\n");
-    printf("%s\t%s\t%.2f\t%s\t%d\t%d\t%s", e1->nombre, e1->departamento, e1>sueldo, e1->direccion.calle, e1->direccion.numero, e1->direccion.cp, e1->direccion.localidad);
+    printf("%s\t%s\t%.2f\t%s\t%d\t%d\t%s", e1->nombre, e1->departamento, e1->sueldo, e1->direccion.calle, e1->direccion.numero, e1->direccion.cp, e1->direccion.localidad);
     printf("\nDatos del empleado 4n");
     printf("%s\t%s\t%.2f\t%s\t%d\t%d\t%s", e4.nombre, e4.departamento, e4.sueldo, e4.direccion.calle, e4.direccion.numero, e4.direccion.cp, e4.direccion.localidad);
 }
