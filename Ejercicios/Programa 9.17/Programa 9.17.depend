@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1712196889 source:c:\users\evelyn dergado rodig\desktop\repository\programacion-para-mecatronicos\ejercicios\programa 9.17\main.c
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
