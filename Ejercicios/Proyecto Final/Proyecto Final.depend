@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1713762837 source:c:\users\evelyn dergado rodig\desktop\repository\programacion-para-mecatronicos\ejercicios\example\main.c
+	<stdio.h>
+	<string.h>
+

@@ -1,0 +1,9 @@
+Cliente 1:
+Automovil: Misubishi
+Precio Auto: 800000000.00
+Promedio Meses Uso: 4000.00
+Consumo (L/Km): 6000.00
+Costo Combustible: 5000000.00
+Consumo (Km/L): 1.26
+Viaje (Km): 600000.00
+
